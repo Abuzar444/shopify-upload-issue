@@ -7,11 +7,11 @@ import { FilterProvider } from "./context/filter_context";
 import { CartProvider } from "./context/cart_context";
 import { UserProvider } from "./context/user_context";
 import { Auth0Provider } from "@auth0/auth0-react";
-const root = ReactDOM.createRoot(document.getElementById('root'))
+// const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
 
-root.render(
+ReactDOM.render(
   <Auth0Provider
     domain={process.env.REACT_APP_AUTH_DOMAIN}
     clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
