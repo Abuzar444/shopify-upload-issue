@@ -11,7 +11,7 @@ const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext();
   const { myUser } = useUserContext()
 
-  const isOpen = false;
+  // const isOpen = false;
   return (
     <SidebarContainer>
       <aside

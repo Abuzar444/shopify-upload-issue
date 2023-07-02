@@ -8,7 +8,7 @@ import {
   FILTER_PRODUCTS,
   CLEAR_FILTERS,
 } from '../actions'
-import products_reducer from './products_reducer'
+// import products_reducer from './products_reducer'
 
 const filter_reducer = (state, action) => {
   if (action.type === LOAD_PRODUCTS) {
@@ -90,12 +90,10 @@ const filter_reducer = (state, action) => {
       })
     }
     //price
-    tempProducts = tempProducts.filter((product) => product.
-      price <= price)
+    tempProducts = tempProducts.filter((product) => product.price <= price)
     //shipping
     if (shipping) {
-      tempProducts = tempProducts.filter((product) => product.
-        shipping === true)
+      tempProducts = tempProducts.filter((product) => product.shipping === true)
     }
     return { ...state, filtered_products: tempProducts }
   }

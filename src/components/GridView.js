@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Product from './Product'
-import products_reducer from '../reducers/products_reducer'
+// import products_reducer from '../reducers/products_reducer'
 
 const GridView = ({ products }) => {
   return <Wrapper>
